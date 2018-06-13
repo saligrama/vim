@@ -34,11 +34,14 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
+set background=dark
+set termguicolors
+let g:onedark_termcolors=16
 syntax on
-let g:lightline = {
-  \ 'colorscheme': 'one',
-  \ }
+let g:lightline = { 'colorscheme': 'one' }
+if !has('gui_running')
+  set t_Co=16
+endif
 colorscheme onedark
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE

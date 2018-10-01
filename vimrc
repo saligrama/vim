@@ -5,7 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -20,6 +20,9 @@ Plugin 'pbrisbin/vim-mkdir'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rust-lang/rust.vim'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'morhetz/gruvbox'
+Plugin 'dracula/vim'
+Plugin 'vim-airline/vim-airline'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -36,13 +39,14 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 set background=dark
 set termguicolors
-let g:onedark_termcolors=16
 syntax on
-let g:lightline = { 'colorscheme': 'one' }
+let g:lightline = { 'colorscheme': 'gruvbox' }
+
 if !has('gui_running')
   set t_Co=16
 endif
-colorscheme onedark
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

@@ -23,6 +23,10 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'morhetz/gruvbox'
 Plugin 'dracula/vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'chriskempson/base16-vim'
+Plugin 'daviesjamie/vim-base16-lightline'
+Plugin 'dylanaraps/wal.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,13 +44,12 @@ filetype plugin indent on    " required
 set background=dark
 set termguicolors
 syntax on
-let g:lightline = { 'colorscheme': 'gruvbox' }
 
 if !has('gui_running')
   set t_Co=16
 endif
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
+
+colorscheme base16-mocha
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

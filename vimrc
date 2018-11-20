@@ -5,7 +5,6 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -49,7 +48,7 @@ if !has('gui_running')
   set t_Co=16
 endif
 
-colorscheme base16-mocha
+colorscheme base16-tomorrow-night
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

@@ -27,6 +27,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'daviesjamie/vim-base16-lightline'
 Plugin 'dylanaraps/wal.vim'
 Plugin 'https://gitlab.com/protesilaos/tempus-themes-vim.git'
+Plugin 'altercation/vim-colors-solarized'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -49,7 +50,7 @@ if !has('gui_running')
   set t_Co=16
 endif
 
-colorscheme tempus_dusk
+colorscheme base16-tomorrow-night
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

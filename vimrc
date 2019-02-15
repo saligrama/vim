@@ -50,7 +50,7 @@ if !has('gui_running')
   set t_Co=16
 endif
 
-colorscheme base16-tomorrow-night
+colorscheme tempus_winter
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

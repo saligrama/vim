@@ -50,7 +50,8 @@ if !has('gui_running')
   set t_Co=16
 endif
 
-colorscheme tempus_winter
+colorscheme gruvbox
+let g:gruvbox_contrast_dark="hard"
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

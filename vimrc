@@ -51,7 +51,7 @@ if !has('gui_running')
 endif
 
 colorscheme tempus_autumn
-let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_contrast_dark="medium"
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

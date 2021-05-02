@@ -42,6 +42,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+set mouse=a
 set background=dark
 set termguicolors
 syntax on
@@ -50,7 +51,7 @@ if !has('gui_running')
   set t_Co=16
 endif
 
-colorscheme tempus_autumn
+colorscheme base16-horizon-dark
 let g:gruvbox_contrast_dark="medium"
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE

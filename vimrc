@@ -28,6 +28,9 @@ Plugin 'daviesjamie/vim-base16-lightline'
 Plugin 'dylanaraps/wal.vim'
 Plugin 'https://gitlab.com/protesilaos/tempus-themes-vim.git'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'ayu-theme/ayu-vim'
+Plugin 'catppuccin/nvim', {'name': 'catppuccin'}
+Plugin 'sainnhe/everforest'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,7 +46,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 set mouse=a
-set background=dark
+"set background=dark
 set termguicolors
 syntax on
 
@@ -51,8 +54,15 @@ if !has('gui_running')
   set t_Co=16
 endif
 
-colorscheme base16-horizon-dark
-let g:gruvbox_contrast_dark="medium"
+"let ayucolor="mirage"
+"colorscheme gruvbox
+"let g:gruvbox_contrast_dark="soft"
+"let g:gruvbox_contrast_light="soft"
+"let g:catppuccin_flavour = 'mocha'
+let g:everforest_background = 'hard'
+let g:everforest_better_performance = 1
+colorscheme everforest
+let g:lightline = {'colorscheme': 'everforest'}
 set guifont=Fira\ Code\ 9
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
